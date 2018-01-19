@@ -16,6 +16,6 @@ def key_for_min_value(name_hash)
   else
    output= nil
   end}
-output
+output[0]
 
 end
