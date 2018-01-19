@@ -6,11 +6,12 @@ def key_for_min_value(name_hash)
   output = 
  
   name_hash.collect {|key, value|
-     if min < value
-    min = min
-     elsif min > value 
+     if min > value 
       min = value
     output = key
+     elsif min < value
+    min = min
+    output
   else
    output= nil
   end}
