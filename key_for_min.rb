@@ -5,7 +5,7 @@ def key_for_min_value(name_hash)
   min = 1000000 
   output = 
  
-  name_hash.each {|key, value|
+  name_hash.collect {|key, value|
      if min < value
     min = min
      elsif min > value 
