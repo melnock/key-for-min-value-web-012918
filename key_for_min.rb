@@ -9,9 +9,10 @@ def key_for_min_value(name_hash)
      if min > value 
       min = value
     output = key
+    output.unshift
      elsif min < value
     min = min
-    output
+    output.unshift
   else
    output= nil
   end}
