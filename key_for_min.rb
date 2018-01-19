@@ -3,16 +3,16 @@
 
 def key_for_min_value(name_hash)
   min = 1000000 
-  output = 
+  output = []
  
   name_hash.collect {|key, value|
      if min > value 
       min = value
-    output = key
-    output.unshift
+    output.unshift(key)
+   
      elsif min < value
     min = min
-    output.unshift
+    output
   else
    output= nil
   end}
